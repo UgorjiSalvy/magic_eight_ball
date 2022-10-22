@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magic_8_balls_games</title>
+</head>
+<body>
+    <script>
+        let userName = prompt("Please enter your username: ")
+        console.log(`Hello ${userName}`)
+        let userQuestion = prompt("Please ask your questions: ")
+        console.log(`${userName}, you demand an answer for ${userQuestion}?`)
+        let randomNumber = Math.floor(Math.random(0) * 8)
+        let eightBall = ""
+        console.log(eightBall)
+        if (randomNumber == 0) {
+           eightBall = "Reply hazy"
+        }
+        else if (randomNumber == 1) {
+            eightBall = "Try again later"
+        }
+        else if (randomNumber == 2) {
+            eightBall = "very true"
+        }
+        else if (randomNumber == 3) {
+            eightBall = "no, no what a lie"
+        }
+        else if (randomNumber == 4) {
+            eightBall = "how is it possible"
+        }
+        else if (randomNumber == 5) {
+            eightBall = "outlook is good"
+        }
+        else if (randomNumber == 6) {
+            eightBall = "don't even think of it"
+        }
+        else {
+            eightBall = "Right, well the answer is processing."
+        }
+        console.log(`${eightBall}`)
+    </script>
+</body>
+</html>
